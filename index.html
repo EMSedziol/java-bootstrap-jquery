@@ -1,25 +1,127 @@
 <!DOCTYPE html>
 <html lang='en'>
-    <header>
-        <title></title>
-        <link rel="stylesheet" 
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
-            integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" 
-            crossorigin="anonymous">
+<header>
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
 
-    </header>
-    <body>
+</header>
+
+<body>
+    <div>
         <button type="button" class="btn btn-primary">Click me!</button>
         <br><br>
+    </div>
+    <div>
         <button type="button" class="btn btn-success">Click me!</button>
         <br><br>
+    </div>
+    <div>
         <button type="button" class="btn btn-danger">Click me!</button>
         <br><br>
+    </div>
+    <div>
         <!-- buttons are only for clicking
             you need JS or something to do an actual link -->
         <button type="button" class="btn btn-link">Click me!</button>
-        
-    </body>
+    </div>
+    <br><br>
+
+    <div>
+        <label>DOW: </label>
+        <input type="text" placeholder="Day of week">
+        <br><br>
+    </div>
+
+    <div class="form-group">
+        <label>DOW: </label> <!-- Value overrides placeholder -->
+        <input class="form-control" name="dow" value="Monday" type="text" placeholder="Day of week">
+        <br><br>
+    </div>
+    <br><br>
+
+
+    <form>
+        <div class="form-group row">
+            <label class="col-form-label col-sm-2 text-right"><b>Name</b></label>
+            <div class='col-sm-7'>
+                <input class='form-control' type="text" placeholder="Name">
+            </div>
+            <br>
+        </div>
+        <div class="form-group row">
+            <label  class="col-form-label col-sm-2 text-right"><b>Address</b></label>
+            <div class='col-sm-7'>
+                 <input class='form-control' type="text" placeholder="Address">
+            </div>
+            <br>
+        </div>
+        <div class="form-group row">
+            <label  class="col-form-label col-sm-2 text-right"><b>City/St/Zip</b></label>
+            <div class='col-sm-4'>
+                <input class='form-control' type="text" placeholder="City">
+            </div>
+            <div class='col-sm-1'>
+                <input class='form-control' type="text" placeholder="St">
+            </div>
+            <div class='col-sm-2'>
+                <input class='form-control' type="text" placeholder="Zip">
+            </div>
+        </div>
+
+    </form>
+
+        <br><br>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Number</th>
+            </tr>
+        </thead>
+        <tbody class="table-dark">
+            <tr>
+                <td class="table-danger">Emilie</td>
+                <td class="bg-danger">Red</td>
+                <td class="bg-danger">9</td>
+            </tr>
+            <tr>
+                <td class="table-success">Lisa</td>
+                <td class="bg-success">Green</td>
+                <td class="bg-success">14</td>
+            </tr>
+            <tr>
+                <tr>
+                    <td class="table-primary">Denise</td>
+                    <td class="bg-primary">Blue</td>
+                    <td class="bg-primary">11</td>
+                </tr>
+                <tr>
+                    <td class="table-primary">Eric</td>
+                    <td class="bg-primary">Blue</td>
+                    <td class="bg-primary">7</td>
+                </tr>
+                <tr>
+                    <td class="table-warning">Luke</td>
+                    <td class="bg-warning">Purple</td>
+                    <td class="bg-warning">14</td>
+                </tr>
+                <tr>
+                    <td class="table-secondary">Andrew</td>
+                    <td>Black</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td class="table-primary">Bill</td>
+                    <td class="bg-primary">Blue</td>
+                    <td class="bg-primary">13</td>
+                </tr>
+        </tbody>
+    </table>
+</body>
+
 </html>
 
 <!-- <button onclick="alert('Welcome')">Click me!</button>  brings up a windows box with 
