@@ -18,6 +18,12 @@ function getData(id) {
         .done(function (product) {
             console.log(product);
             fillData(product);
+        }).fail(function() {
+            $("#idx").val("");
+            $("#name").val("");
+            $("#partNumber").val("");
+            $("#price").val("");
+            $("#unit").val("");
         });
 }
 
